@@ -13,14 +13,14 @@ const Styles = {
         // backgroundColor:"blue",
         boxSizing: "border-box",
         position:"absolute",
-        top:"3066px",
+        paddingTop:"200px",
         height: "800px",
         left:"0px",
         width: "1920px",
         borderRadius: "0px",
         display: "flex",
         alignItems: "center",
-        background: "linear-gradient(rgba(150, 150, 150,0.5),rgba(255, 255, 255,0.5))"
+        // background: "linear-gradient(rgba(150, 150, 150,0.5),rgba(255, 255, 255,0.5))"
 
         // backgroundColor:"white"
     },
@@ -29,8 +29,22 @@ const Styles = {
         boxSizing: "border-box",
         position: "absolute",
         marginTop:"-70px",
-        width: "10%",
+        width: "20%",
         height: "5%",
+        fontFamily: 'Quicksand',
+        fontStyle: "normal",
+        fontWeight: 700,
+        fontSize: "20px",
+        lineHeight: "47px",
+        border: "2px solid #000000",
+        paddingTop:"0px"
+    },
+    formBoxKeterangan:{
+        boxSizing: "border-box",
+        position: "absolute",
+        marginTop:"-70px",
+        width: "20%",
+        height: "20%",
         fontFamily: 'Quicksand',
         fontStyle: "normal",
         fontWeight: 700,
@@ -41,7 +55,7 @@ const Styles = {
 
     form: {
         marginBottom:"10px",
-        marginLeft:"800px",
+        marginLeft:"725px",
         fontFamily: 'Quicksand',
         fontStyle: "normal",
         fontWeight: 700,
@@ -64,6 +78,17 @@ const Styles = {
         lineHeight: "47px",
         marginBottom:"100px",
         marginLeft:"700px"
+        // color: "#FFFFFF"
+
+    },
+    FindMe: {
+        fontFamily: 'Quicksand',
+        fontStyle: "normal",
+        fontWeight: 600,
+        fontSize: "20px",
+        lineHeight: "47px",
+        marginBottom:"100px",
+        marginLeft:"800px"
         // color: "#FFFFFF"
 
     },

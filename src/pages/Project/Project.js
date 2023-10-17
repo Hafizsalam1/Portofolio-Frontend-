@@ -1,4 +1,4 @@
-import griyamirah from "../Assets/griyamirah.png"
+import griyamirah from "../../Assets/griyamirah.png"
 import Styles from "./ProjectStyle"
 
 
