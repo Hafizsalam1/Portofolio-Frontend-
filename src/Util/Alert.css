@@ -16,14 +16,15 @@
     background-color: #fff; /* Background color for the alert */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
-    max-width: 400px; /* Adjust the width as needed */
+    width: 400px; /* Adjust the width as needed */
+    height: 400px;
     padding: 20px; /* Padding inside the alert */
     text-align: center;
   }
   
   .popup-content {
-    font-size: 18px; /* Text font size */
-    margin-bottom: 20px; /* Space below the text */
+    font-size: 30px; /* Text font size */
+    margin-top: 50px; /* Space below the text */
   }
   
   /* Close button styles */
