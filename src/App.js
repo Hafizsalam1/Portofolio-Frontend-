@@ -10,6 +10,7 @@ import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import Home from './pages/LandingPage/LandingPage';
 import About from './pages/Aboutme/AboutMe';
 import Portfolio from './pages/Project/Project';
+import Footer from './Footer/footer';
 
 
 

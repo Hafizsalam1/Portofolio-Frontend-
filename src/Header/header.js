@@ -20,9 +20,71 @@ const SOCIALMEDIA = [
 
 ]
 
+const MenuItem = ({ href, label }) => {
+    const [isMouseOver, setIsMouseOver] = useState(false);
+
+
+    const underLineOn = () => {
+        setIsMouseOver(true);
+    };
+
+    const underLineOff = () => {
+        setIsMouseOver(false);
+    };
+
+    return (
+        <a
+            style={{
+                ...Styles.menu,
+                textDecoration: isMouseOver ? 'underline' : 'none'
+            }}
+            onMouseEnter={underLineOn}
+            onMouseLeave={underLineOff}
+            href={href}
+        >
+            {label}
+        </a>
+    );
+};
+
+const SocialMediaLink = ({ href, label }) => {
+
+    const [isGettingBigger, setIsGettingBigger] = React.useState(false);
+
+    const gettingBigger = () =>{
+
+        setIsGettingBigger(true);
+    };
+
+    const gettingSmaller = () =>{
+        setIsGettingBigger(false);
+    };
+
+
+
+return(
+    <a style={Styles.menu} href={href}>
+        <img src={label} alt="Social Media Logo" style={{...Styles.logoSosmed, 
+        transform: isGettingBigger ? 'scale(1.1)' : 'scale(1)'
+        }}
+        onMouseEnter={gettingBigger}
+        onMouseLeave={gettingSmaller}
+        />
+    </a>
+
+);
+}
+
+
+
+
+
+
 const Header = () =>{
 
     const [isMenuVisible, setMenuVisible] = React.useState(false);
+    const [isMouseOver, setIsMouseOver] = React.useState(false);
+
 
     const handleMouseEnter = () => {
       setMenuVisible(true);
@@ -32,22 +94,22 @@ const Header = () =>{
       setMenuVisible(false);
     };
 
+
+    
+
     return(
         <div  
-        style={Styles.rectHead}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
+        style={{
+            ...Styles.rectHead,
+            opacity: isMenuVisible ? 1 : 0.1, // Adjust the opacity based on menuVisible
+          }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
             <div style={Styles.navBar}>
             {MENU.map((item, idx) => {
                         return(
-                            <a 
-                            style={Styles.menu}
-                            href={item.href}
-                                key={idx}>
-                                    {item.label}
-
-                                </a>
+                            <MenuItem key={idx} {...item} />
                         )
                     }
                 )}
@@ -56,12 +118,7 @@ const Header = () =>{
             <div style={Styles.navBarLogo}>
     {SOCIALMEDIA.map((item, idx) => {
         return (
-            <a
-                style={Styles.menu}
-                href={item.href}
-                key={idx}>
-                <img src={item.label} alt="Social Media Logo" style={Styles.logoSosmed}/> 
-            </a>
+            <SocialMediaLink key={idx} {...item} />
         )
     })}
 </div>

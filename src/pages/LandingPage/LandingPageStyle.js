@@ -14,11 +14,11 @@ const Styles = {
         // backgroundImage: `url(${back2})`,
         // imageOpacity:0.2,
         height: "1022px",
-        width: "1920px",
+        width: "1900px",
+        // width: "100%",
         left: "0px",
         top: "0px",
         borderRadius: "0px",
-        maxWidth:"1920px",
 
         maxHeight: "1200px", // Set your desired maximum height here
         overflow: "hidden",
@@ -30,8 +30,7 @@ const Styles = {
         alignItems: "center",
         padding: "0 70px",
         position: "absolute",
-         boxSizing: "border-box",
-        width: "100%"
+         boxSizing: "border-box"
     },
     menu: {
         fontFamily: 'Lato',
@@ -78,9 +77,39 @@ const Styles = {
         // color: "#FFFFFF"
 
     },
+
+    buildSomething: {
+        fontFamily: 'Quicksand',
+        fontStyle: "normal",
+        fontWeight: 700,
+        fontSize: "20px",
+        lineHeight: "47px",
+        marginTop: "-70px",
+        // textShadow: "2px 2px 4px #000",
+        paddingLeft: "243px"
+        // color: "#FFFFFF"
+
+    },
     rightSession: {
         display: "flex",
         alignItems: "center"
+    },
+
+    whatCanIdo: {
+        fontFamily: 'Quicksand',
+        width:"150px",
+        fontStyle: "normal",
+        fontWeight: 700,
+        fontSize: "15px",
+        lineHeight: "47px",
+        marginTop: "35px",
+        // textShadow: "2px 2px 4px #000",
+        paddingLeft: "0px"
+
+    },
+    copyright: {
+        marginBottom: "50px"
+
     },
 
     navBar:{
