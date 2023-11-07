@@ -10,6 +10,7 @@ import ind from "../../Assets/ind.jpg"
 import ing from "../../Assets/ing.jpg"
 import angular from "../../Assets/angular.svg"
 import typescript from "../../Assets/typescript.svg"
+import sqlserver from "../../Assets/sqlserver.png"
 import React from "react";
 import { useState, useEffect } from "react"
 
@@ -62,6 +63,8 @@ const AboutMe = () =>{
             <img src={javascript} style={Styles.icon} /></a>
             <a href="https://www.postgresql.org/" target="_blank">
             <img src={postgresql} style={Styles.icon} /></a>
+            <a href="https://www.microsoft.com/en-us/sql-server" target="_blank">
+            <img src={sqlserver} style={Styles.icon} /></a>
             <a href="https://spring.io/" target="_blank">
             <img src={spring} style={Styles.icon} /></a>
             <a href="https://spring.io/projects/spring-boot" target="_blank">
@@ -73,8 +76,6 @@ const AboutMe = () =>{
             <div style={Styles.kumpulanLogo}>
             <img src={ind} style={Styles.icon} />
             <img src={ing} style={Styles.icon} />
-           
-
             </div>
 
             </div>

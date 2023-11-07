@@ -14,7 +14,7 @@ const Styles = {
         // backgroundImage: `url(${back2})`,
         // imageOpacity:0.2,
         height: "1022px",
-        width: "1900px",
+        width: "1905px",
         // width: "100%",
         left: "0px",
         top: "0px",

@@ -7,7 +7,7 @@ const Styles = {
     container: {
       paddingTop: "100px",
       position: "relative", // Relative positioning for flexible layout
-      height: "100vh", // Adjust the height as needed
+      height: "120vh", // Adjust the height as needed
       width: "100%", // Full width
       backgroundColor: "white",
       display: "flex",
@@ -94,9 +94,10 @@ const Styles = {
     icon: {
       width: "13%",
       height: "13%",
+      paddingLeft: "20px"
     },
     kumpulanLogo: {
-      marginLeft: "10px",
+      marginLeft: "10px"
     },
     kumpulanBendera: {
       marginLeft: "600px",
