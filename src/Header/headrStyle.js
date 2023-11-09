@@ -2,7 +2,7 @@
 const Styles = {
   navBar:{
     backgroundColor:"black",
-    position: "absolute",
+    position: "fixed",
     width: "637px",
     height: "46px",
     left: "1100px",
@@ -23,7 +23,7 @@ navBarLogo:{
   borderRadius: 10,
   zIndex:1,
   // display: isMenuVisible ? "flex" : "none", // Show/hide based on isMenuVisible state
-  top: "-120px"
+  top: "-140px"
 },
 
   rectHead: {

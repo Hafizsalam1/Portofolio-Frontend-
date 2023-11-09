@@ -1,0 +1,115 @@
+/* Default styles for mobile devices */
+.navBar {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 46px;
+  left: 0;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  top: -140px;
+}
+
+.navBarLogo {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 46px;
+  left: 0;
+  border: 3px solid lightgray;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  top: -90px;
+}
+
+.rectHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  max-width: 1920px;
+  background-color: black;
+  position: fixed;
+  padding: 0 10px;
+  box-sizing: border-box;
+  opacity: 0.8;
+}
+
+.menu {
+  padding: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.logoSosmed {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .navBar {
+    position: absolute;
+    width: 637px;
+    left: 200px;
+    top: -140px;
+  }
+
+  .navBarLogo {
+    position: absolute;
+    width: 637px;
+    left: 200px;
+    top: -90px;
+  }
+
+  .rectHead {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 70px;
+  }
+
+  .menu {
+    margin-left: 10px;
+  }
+}
+
+/* Styles for social media links */
+.socialMediaLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMediaLinks a {
+  margin-left: 10px;
+}
+
+.socialMediaLinks img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  .socialMediaLinks {
+    margin-left: 0;
+  }
+
+  .socialMediaLinks img {
+    width: 50px;
+  }
+}

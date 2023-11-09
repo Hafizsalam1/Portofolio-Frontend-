@@ -5,7 +5,8 @@ const Styles = {
       opacity: 0.2
     },
     container: {
-      paddingTop: "100px",
+      paddingTop: "120px",
+      marginLeft: "300px",
       position: "relative", // Relative positioning for flexible layout
       height: "120vh", // Adjust the height as needed
       width: "100%", // Full width
@@ -13,6 +14,8 @@ const Styles = {
       display: "flex",
       flexDirection: "column", // Column layout
       alignItems: "center",
+      paddingLeft: "50px",
+      paddingRight: "50px"
     },
     fotdir: {
       width: "70%",
@@ -30,7 +33,7 @@ const Styles = {
       fontFamily: 'Quicksand',
       fontStyle: "normal",
       fontWeight: 700,
-      fontSize: "80px",
+      fontSize: "65px",
       lineHeight: "47px",
       textAlign: "center", // Center align
     },

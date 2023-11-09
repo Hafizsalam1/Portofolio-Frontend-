@@ -10,8 +10,6 @@ const LandingPage = ()=>{
 
     const [isMouseOver, setIsMouseOver] = React.useState(false);
     const [isMouseOverBuild, setIsMouseOverBuild] = React.useState(false);
-
-
     const [isAnimated, setIsAnimated] = React.useState(false);
 
     useEffect(() => {
